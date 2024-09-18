@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Consumption Calculator</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Consumo de Energia</h2>
+      
+        <!-- Seleção de Unidade Consumidora -->
+        <div class="form-group">
+          <label for="unidadeConsumidoraSelect">Unidade Consumidora</label>
+          <select id="unidadeConsumidoraSelect" class="form-control"></select>
+        </div>
+      
+        <!-- Seleção de Bandeira Tarifária -->
+        <div class="form-group">
+          <label for="bandeiraSelect">Bandeira Tarifária</label>
+          <select id="bandeiraSelect" class="form-control"></select>
+        </div>
+      
+        <!-- Botão para calcular -->
+        <button class="btn btn-primary" onclick="calcularConsumo()">Calcular Consumo</button>
+      
+        <!-- Resultado -->
+        <div id="resultado" class="mt-3"></div>
+      </div>
+      
+  <script src="js/calcu.js"></script>
+</body>
+</html>
